@@ -1,0 +1,1 @@
+Download and extract the data here. Make sure the there is no double folder (like data_organized/data_organized/..)
