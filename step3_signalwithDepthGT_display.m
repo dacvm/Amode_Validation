@@ -1,6 +1,6 @@
 %% SUMMARY
-% This code is to generate the depth estimated by the ultrasound signal 
-% (from user selection) and the ground truth.
+% This code is to display the selected peak by the user and the ground
+% truth derived from CT-scan.
 %
 % Ultrasound signal was stored and ecoded in an .TIFF file. Find the whole
 % data in: 'data_organized\US\CTexp1\duringCT_cut' or
@@ -8,9 +8,18 @@
 % To read this data use the function readTIFF_USsignal(). You can find the
 % function in: functions\AModeMocap\readTIFF_USsignal.m
 %
-% User selection is defined in the experiment and stored in an *.ini file.
+% User window selection was defined during the experiment and were 
+% stored in an *.ini file.
 % Find it in: 'data_organized\US\CTexp1' or 
 %             'data_organized\US\CTexp2'
+% 
+% This script required the MAT file, 'transducers2_probebased_tubedepth.mat'
+% to be generated first. Use the script: 
+% 'step2_calculateDepthGT_maximeVersion.m'
+%
+% This script assumed that the A-mode signal already processed using peak
+% detection toolbox. Find the toolbox here:
+% https://github.com/dacvm/Amode_Process_Simple.git
 
 
 
